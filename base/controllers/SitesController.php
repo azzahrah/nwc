@@ -8,7 +8,7 @@ use app\models\Generator;
 use app\models\search\SiteSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\web\VerbFilter;
+use yii\filters\VerbFilter;
 
 /**
  * SitesController implements the CRUD actions for Site model.
@@ -19,7 +19,7 @@ class SitesController extends Controller
     {
         return [
 			'access' => [
-				'class' => 'yii\web\AccessControl',
+				'class' => 'yii\filters\AccessControl',
 				'rules' => [
 					['allow' => true, 'roles' => ['@']],
 					['allow' => false, 'roles' => ['?']],

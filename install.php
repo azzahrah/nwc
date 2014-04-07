@@ -11,16 +11,13 @@ echo "
    \ \__\\ \__\ \____________\ \_______\
     \|__| \|__|\|____________|\|_______|
 
-Welcome to NWC Installation\n\n
+Welcome to NWC Installation
 ";
 
+### Copy NWC
 if (getcwd() != $install_dir) {
-    echo "Installing NWC to {$install_dir} \n";
-    
+    echo "Copying NWC to {$install_dir} \n";
     if (is_dir($install_dir)) {
-        $process = "ps aux | grep /var/nwc | awk 'FNR == 1 {print $2}'";
-        $process = exec($process);
-        exec ("kill {$process}");
         exec ("rm -rf {$install_dir}");
     } 
     
@@ -31,3 +28,25 @@ if (getcwd() != $install_dir) {
     echo "Installing from {$install_dir} \n";
 }
 
+### Composer update
+$handle = popen("cd {$install_dir}/base && /var/nwc/php /var/nwc/composer.phar update 2>&1", 'r');
+while (!feof($handle))
+{
+    $read = fread($handle, 2096);
+    echo $read;
+}
+pclose($handle);
+
+### Run NWC
+chdir($install_dir);
+exec ("cp nwc.conf /etc/init/");
+echo "Starting NWC Service\n";
+exec ("service nwc restart");
+
+echo "\n\nNWC Successfully Installed!\n\n";
+
+### Get IP
+ob_start();
+include("ip.php");
+$ip = ob_get_clean();
+echo $ip;

@@ -8,7 +8,7 @@ class NginxController extends \yii\web\Controller
     {
         return [
     		'access' => [
-				'class' => 'yii\web\AccessControl',
+				'class' => 'yii\filters\AccessControl',
 				'rules' => [
 					['allow' => true, 'roles' => ['@']],
 					['allow' => false, 'roles' => ['?']],

@@ -7,7 +7,7 @@ use app\models\Setting;
 use app\models\search\SettingSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\web\VerbFilter;
+use yii\filters\VerbFilter;
 
 /**
  * SettingController implements the CRUD actions for Setting model.
@@ -24,7 +24,7 @@ class SettingController extends Controller
                 ],
             ],
     		'access' => [
-				'class' => 'yii\web\AccessControl',
+				'class' => 'yii\filters\AccessControl',
 				'rules' => [
 					['allow' => true, 'roles' => ['@']],
 					['allow' => false, 'roles' => ['?']],
