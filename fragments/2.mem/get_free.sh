@@ -1,0 +1,1 @@
+free -m | awk 'FNR == 2 {print $4}'

@@ -1,0 +1,7 @@
+{
+	"name": "CPU",
+	"interval" : 3,
+	"data": {
+		"cpu": "get_cpu.sh"
+	}
+}

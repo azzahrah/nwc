@@ -1,0 +1,22 @@
+<?php
+use yii\helpers\Html;
+
+$installed = (trim($status) != "");
+$alive = (trim($status) == "* nginx is running");
+?>
+<?php if ($installed): ?>
+<div id="fragment_<?= $number ?>" class="col-lg-3 col-xs-6" >
+	<div class="small-box bg-black">
+		<div class="inner pull-left" style="font-weight:bold;line-height:16px;display:block;padding:3px 10px 5px 10px;">
+		service nginx
+		</div>
+		<div class="inner pull-left" style="text-align:left;padding:0px 0px 0px 8px;">
+			<?= Html::a("START",['/nginx/start'],['class'=>'btn btn-success', 'style' => 'margin-bottom:5px']) ?>
+			<?= Html::a("STOP",['/nginx/stop'],['class'=>'btn btn-danger', 'style' => 'margin-bottom:5px']) ?> 
+			<?= Html::a("RELOAD",['/nginx/reload'],['class'=>'btn btn-primary', 'style' => 'margin-bottom:5px']) ?> 
+			<?= Html::a("FORCE RELOAD",['/nginx/forcereload'],['class'=>'btn btn-warning', 'style' => 'margin-bottom:5px']) ?>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<?php endif; ?>

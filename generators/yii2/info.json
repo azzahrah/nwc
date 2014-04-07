@@ -1,0 +1,63 @@
+{
+    "name": "Yii2 + git",
+    "description": "This will create git repo containing yii source code",
+    "requirement": "nginx php5-fpm mysql-server git",
+    "steps": [
+        {
+            "title": "Validating nginx config",
+            "script": "validate.php"
+        },
+        {
+            "title": "Installing nginx (if not installed)",
+            "script": "install_nginx.php"
+        },
+        {
+            "title": "Installing php5-fpm (if not installed)",
+            "script": "install_php5fpm.php"
+        },
+        {
+            "title": "Installing composer (if not installed)",
+            "script": "install_composer.php"
+        },
+        {
+            "title": "Installing git (if not installed)",
+            "script": "install_git.php"
+        },
+        {
+            "title" : "Creating git repository",
+            "script": "create_repo.php"
+        },
+        {
+            "title": "Creating nginx site entry",
+            "script": "generate.php"
+        },
+        {
+            "title": "Installing Yii2-app-basic via composer",
+            "script": "install_yii2.php"
+        }
+    ],
+    "fields": {
+        "server_name": {
+            "title": "Domain Name",
+            "info": "Just domain, without <i>http://</i> or <i>www</i>. e.g. example.com",
+            "type": "textInput"
+        },
+        "root_directory": {
+            "title": "Root Directory",
+            "info": "location of files on the server, e.g. /var/www/example.com",
+            "type": "textInput",
+            "default": "/var/www/",
+            "post_process": "rtrim($field,'/') . '/'"
+        },
+        "git_dir": {
+            "title": "Git Directory",
+            "type": "textInput",
+            "info": "location of git repository on the server, e.g. /repo/example.git",
+            "default": "/repo/",
+            "post_process": "rtrim($field,'/') . '/'"
+        }
+    },
+    "js": [
+        "script.js"
+    ]
+}

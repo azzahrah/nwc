@@ -1,0 +1,19 @@
+{
+    "name": "Wordpress",
+    "description": "Create Wordpress Blog",
+	"requirement": "nginx php5 mysql-server",
+    "steps": {
+        "Validating nginx config": "validate.php",
+        "Creating nginx site entry": "step1.sh"
+    },
+    "fields": {
+        "server_name": {
+            "type": "textInput"
+        },
+        "root_directory": {
+            "type": "textInput",
+            "default": "/var/www/"
+            
+        }
+    }
+}

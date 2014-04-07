@@ -1,0 +1,51 @@
+.site-login {
+    margin:0px auto;
+    float:none;
+    border:1px solid #fff;
+    color:#000;
+    background:#fff;
+}
+
+.grid-view .table {
+    background:#fff;
+}
+
+.grid-view .table .filters td,
+.grid-view .table th {
+    border-bottom:0px;
+}
+
+.top-button {
+    margin-top:7px;
+}    
+
+.sites.editconfig .content  {
+	padding: 0px;
+}
+
+#editor { 
+	border-radius:0px;
+	margin:0px !important;
+	border:0px;
+	padding:10px !important;
+	font-family:Menlo, Monaco, Consolas, "Courier New", monospace !important;
+	width:100%;
+	height:200px;
+	display: block;
+	font-size: 13px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fafafa;
+}
+
+.popover {
+	z-index:999999;
+}
+
+.popover hr {
+	margin:5px -15px;
+}
+
+.infinite-scroll .pagination {
+	display:none;
+}

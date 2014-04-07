@@ -1,0 +1,33 @@
+{
+    "name": "Basic NGINX",
+    "description": "This will create basic nginx site entry which will serve static html",
+	"requirement": "nginx",
+    "steps": [
+        {
+            "title": "Validating nginx config",
+            "script": "validate.php"
+        },
+        {
+            "title": "Installing nginx (if not installed)",
+            "script": "install.php"
+        },
+        {
+            "title": "Creating nginx site entry",
+            "script": "generate.php"
+        }
+    ],
+    "fields": {
+        "server_name": {
+			"title": "Domain Name",
+			"info": "Just domain, without <i>http://</i> or <i>www</i>. e.g. example.com",
+            "type": "textInput"
+        },
+        "root_directory": {
+			"title": "Root Directory",
+			"info": "location of files on the server, e.g. /var/www/example.com",
+            "type": "textInput",
+		    "default": "/var/www/",
+            "post_process": "rtrim($field,'/') . '/'"
+        }
+    }
+}

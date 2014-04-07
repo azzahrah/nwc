@@ -1,0 +1,6 @@
+{
+	"name": "nginx",
+	"data": {
+		"status": "status.sh"
+	}
+}

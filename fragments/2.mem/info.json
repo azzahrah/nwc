@@ -1,0 +1,9 @@
+{
+	"name": "MEMORY",
+	"interval" : 3,
+	"data": {
+		"total": "get_total.sh",
+		"used": "get_used.sh",
+		"free": "get_free.sh"
+	}
+}

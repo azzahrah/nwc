@@ -1,0 +1,7 @@
+{
+	"name": "nginx",
+	"interval" : 3,
+	"data": {
+		"status": "status.sh"
+	}
+}

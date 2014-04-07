@@ -1,0 +1,21 @@
+<?php
+use yii\helpers\Html;
+$installed = (trim($status) != "");
+$alive = (trim($status) == "* nginx is running");
+
+?>
+
+<div id="fragment_<?= $number ?>" class="col-lg-3 col-xs-6">
+	<div class="small-box bg-<?= ($alive? 'green' : 'red'); ?>">
+		<div class="inner">		
+		<p>NGINX is</p>
+		<?php if ($alive): ?>
+			<h3><span>ALIVE</span></h3>
+		<?php elseif ($installed): ?>
+			<h3><span>DEAD</span></h3>
+		<?php else: ?>
+			<h3 style="font-size:24px;line-height:41px;"><span>NOT INSTALLED</span></h3>
+		<?php endif; ?>
+		</div>
+	</div>
+</div>
