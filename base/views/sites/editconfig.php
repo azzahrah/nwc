@@ -8,6 +8,8 @@ $this->registerJs('
 		lineNumbers: true,
         viewportMargin: Infinity
 	});
+    
+    $("#error").popover();
 ', View::POS_END, 'codemirror');
 ?>
 
