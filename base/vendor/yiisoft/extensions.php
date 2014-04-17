@@ -39,6 +39,15 @@ return array (
       '@kartik' => $vendorDir . '/kartik-v/yii2-grid',
     ),
   ),
+  'kop/yii2-scroll-pager' => 
+  array (
+    'name' => 'kop/yii2-scroll-pager',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kop/y2sp' => $vendorDir . '/kop/yii2-scroll-pager',
+    ),
+  ),
   'yiisoft/yii2-swiftmailer' => 
   array (
     'name' => 'yiisoft/yii2-swiftmailer',
@@ -73,15 +82,6 @@ return array (
     'alias' => 
     array (
       '@yii/gii' => $vendorDir . '/yiisoft/yii2-gii',
-    ),
-  ),
-  'kop/yii2-scroll-pager' => 
-  array (
-    'name' => 'kop/yii2-scroll-pager',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@kop/y2sp' => $vendorDir . '/kop/yii2-scroll-pager',
     ),
   ),
 );

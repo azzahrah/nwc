@@ -25,7 +25,7 @@
                 "dev-master": "4.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
             "OFL-1.1",
@@ -66,7 +66,7 @@
         },
         "time": "2014-01-24 06:00:08",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
@@ -150,7 +150,7 @@
                 "name": "Carsten Brandt",
                 "email": "mail@cebe.cc",
                 "homepage": "http://cebe.cc/",
-                "role": "Creator"
+                "role": "Core framework development"
             }
         ],
         "description": "A super fast highly extensible markdown parser for PHP",
@@ -183,7 +183,7 @@
         },
         "time": "2013-11-30 08:25:19",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "HTMLPurifier": "library/"
@@ -217,18 +217,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-composer.git",
-            "reference": "90547559cbf45b1836c370c0b4d1b2c70f778dd5"
+            "reference": "283ba99f3cc9e0203b1ec507f615a8566dfcecc8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/90547559cbf45b1836c370c0b4d1b2c70f778dd5",
-            "reference": "90547559cbf45b1836c370c0b4d1b2c70f778dd5",
+            "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/283ba99f3cc9e0203b1ec507f615a8566dfcecc8",
+            "reference": "283ba99f3cc9e0203b1ec507f615a8566dfcecc8",
             "shasum": ""
         },
         "require": {
             "composer-plugin-api": "1.0.0"
         },
-        "time": "2014-03-16 04:46:21",
+        "time": "2014-04-14 01:22:29",
         "type": "composer-plugin",
         "extra": {
             "class": "yii\\composer\\Plugin"
@@ -259,6 +259,86 @@
         ]
     },
     {
+        "name": "yiisoft/yii2",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-framework.git",
+            "reference": "6f79cc408f74462bf415960c1017dfc76c5a53d1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/6f79cc408f74462bf415960c1017dfc76c5a53d1",
+            "reference": "6f79cc408f74462bf415960c1017dfc76c5a53d1",
+            "shasum": ""
+        },
+        "require": {
+            "cebe/markdown": "0.9.*",
+            "ext-mbstring": "*",
+            "ezyang/htmlpurifier": "4.6.*",
+            "lib-pcre": "*",
+            "php": ">=5.4.0",
+            "yiisoft/jquery": "~2.0 | ~1.10",
+            "yiisoft/jquery-pjax": "*",
+            "yiisoft/yii2-composer": "*"
+        },
+        "time": "2014-04-17 02:05:20",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "yii\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            },
+            {
+                "name": "Alexander Makarov",
+                "email": "sam@rmcreative.ru",
+                "homepage": "http://rmcreative.ru/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Maurizio Domba",
+                "homepage": "http://mdomba.info/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Carsten Brandt",
+                "email": "mail@cebe.cc",
+                "homepage": "http://cebe.cc/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Timur Ruziev",
+                "email": "resurtm@gmail.com",
+                "homepage": "http://resurtm.com/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com",
+                "role": "Core framework development"
+            }
+        ],
+        "description": "Yii PHP Framework Version 2",
+        "homepage": "http://www.yiiframework.com/",
+        "keywords": [
+            "framework",
+            "yii2"
+        ]
+    },
+    {
         "name": "rmrevin/yii2-fontawesome",
         "version": "1.1.0",
         "version_normalized": "1.1.0.0",
@@ -279,7 +359,7 @@
         },
         "time": "2014-03-24 09:44:26",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "rmrevin\\yii\\fontawesome\\": ""
@@ -293,7 +373,7 @@
             {
                 "name": "Revin Roman",
                 "email": "xgismox@gmail.com",
-                "homepage": "http://phptime.ru/",
+                "homepage": "http://rmrevin.ru",
                 "role": "Founder and project lead"
             }
         ],
@@ -313,15 +393,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-            "reference": "e6369e391e98a834b93e97b519eb4776b60b6e3d"
+            "reference": "5db03b87c380b99cc2381d8ad872ca1bbbf505f8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/e6369e391e98a834b93e97b519eb4776b60b6e3d",
-            "reference": "e6369e391e98a834b93e97b519eb4776b60b6e3d",
+            "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/5db03b87c380b99cc2381d8ad872ca1bbbf505f8",
+            "reference": "5db03b87c380b99cc2381d8ad872ca1bbbf505f8",
             "shasum": ""
         },
-        "time": "2014-03-22 11:21:09",
+        "time": "2014-04-05 10:53:57",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -359,15 +439,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/bootstrap-star-rating.git",
-            "reference": "607f0851f22e4a1fc3c41e1e5502b827f44d07a0"
+            "reference": "228e505029c4e85298a0b17c5ab5f08dc502b64a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/607f0851f22e4a1fc3c41e1e5502b827f44d07a0",
-            "reference": "607f0851f22e4a1fc3c41e1e5502b827f44d07a0",
+            "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/228e505029c4e85298a0b17c5ab5f08dc502b64a",
+            "reference": "228e505029c4e85298a0b17c5ab5f08dc502b64a",
             "shasum": ""
         },
-        "time": "2014-03-25 05:30:54",
+        "time": "2014-04-05 10:50:03",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -396,21 +476,77 @@
         ]
     },
     {
+        "name": "swiftmailer/swiftmailer",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/swiftmailer/swiftmailer.git",
+            "reference": "d5d580ca7ced89955ce7200f41fb0f97b8f74c60"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/d5d580ca7ced89955ce7200f41fb0f97b8f74c60",
+            "reference": "d5d580ca7ced89955ce7200f41fb0f97b8f74c60",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "require-dev": {
+            "mockery/mockery": "~0.9@dev"
+        },
+        "time": "2014-04-13 13:06:08",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.1-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "lib/swift_required.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Chris Corbyn"
+            }
+        ],
+        "description": "Swiftmailer, free feature-rich PHP mailer",
+        "homepage": "http://swiftmailer.org",
+        "keywords": [
+            "mail",
+            "mailer"
+        ]
+    },
+    {
         "name": "twbs/bootstrap",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/twbs/bootstrap.git",
-            "reference": "a419e41c325c20a024ad0abea3d7cc8b537d2b26"
+            "reference": "ee7498a69366c516ccba01ca7c977fb83ea23a7b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a419e41c325c20a024ad0abea3d7cc8b537d2b26",
-            "reference": "a419e41c325c20a024ad0abea3d7cc8b537d2b26",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/ee7498a69366c516ccba01ca7c977fb83ea23a7b",
+            "reference": "ee7498a69366c516ccba01ca7c977fb83ea23a7b",
             "shasum": ""
         },
-        "time": "2014-03-31 01:00:06",
+        "time": "2014-04-09 19:07:27",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -481,78 +617,25 @@
         "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays)."
     },
     {
-        "name": "swiftmailer/swiftmailer",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/swiftmailer/swiftmailer.git",
-            "reference": "82ec0cdebf731efac382e1c509a42ce0c643a41b"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/82ec0cdebf731efac382e1c509a42ce0c643a41b",
-            "reference": "82ec0cdebf731efac382e1c509a42ce0c643a41b",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.2.4"
-        },
-        "time": "2014-03-24 14:44:22",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "5.1-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "files": [
-                "lib/swift_required.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com",
-                "homepage": "http://fabien.potencier.org",
-                "role": "Lead Developer"
-            },
-            {
-                "name": "Chris Corbyn"
-            }
-        ],
-        "description": "Swiftmailer, free feature-rich PHP mailer",
-        "homepage": "http://swiftmailer.org",
-        "keywords": [
-            "mail",
-            "mailer"
-        ]
-    },
-    {
         "name": "yiisoft/yii2-bootstrap",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-            "reference": "4f20483deac5f21ac011fc09facdf7f2623a08e3"
+            "reference": "f33c5135ddc8e3173c0715d914263d2ae3042d56"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/4f20483deac5f21ac011fc09facdf7f2623a08e3",
-            "reference": "4f20483deac5f21ac011fc09facdf7f2623a08e3",
+            "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/f33c5135ddc8e3173c0715d914263d2ae3042d56",
+            "reference": "f33c5135ddc8e3173c0715d914263d2ae3042d56",
             "shasum": ""
         },
         "require": {
             "twbs/bootstrap": "3.0.*",
             "yiisoft/yii2": "*"
         },
-        "time": "2014-03-20 13:30:50",
+        "time": "2014-04-14 01:22:29",
         "type": "yii2-extension",
         "installation-source": "source",
         "autoload": {
@@ -585,21 +668,21 @@
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/yii2-widgets.git",
-            "reference": "f702cac6696e5a43b214dcf91ed98202c420eaf6"
+            "reference": "1ef30799993f6f6d9dd23b3b0c5cbb45ebc9479a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/f702cac6696e5a43b214dcf91ed98202c420eaf6",
-            "reference": "f702cac6696e5a43b214dcf91ed98202c420eaf6",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/1ef30799993f6f6d9dd23b3b0c5cbb45ebc9479a",
+            "reference": "1ef30799993f6f6d9dd23b3b0c5cbb45ebc9479a",
             "shasum": ""
         },
         "require": {
-            "kartik-v/bootstrap-fileinput": "dev-master",
-            "kartik-v/bootstrap-star-rating": "dev-master",
-            "yiisoft/yii2": "dev-master",
-            "yiisoft/yii2-bootstrap": "dev-master"
+            "kartik-v/bootstrap-fileinput": "*",
+            "kartik-v/bootstrap-star-rating": "*",
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-bootstrap": "*"
         },
-        "time": "2014-03-25 14:33:37",
+        "time": "2014-04-17 03:31:27",
         "type": "yii2-extension",
         "installation-source": "source",
         "autoload": {
@@ -634,20 +717,20 @@
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/yii2-grid.git",
-            "reference": "3706967f8c33738411d3a44774c9a1cc09d46712"
+            "reference": "a23f47e58da917e65c27e9e2425e8773c4d40dbd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/3706967f8c33738411d3a44774c9a1cc09d46712",
-            "reference": "3706967f8c33738411d3a44774c9a1cc09d46712",
+            "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/a23f47e58da917e65c27e9e2425e8773c4d40dbd",
+            "reference": "a23f47e58da917e65c27e9e2425e8773c4d40dbd",
             "shasum": ""
         },
         "require": {
-            "kartik-v/yii2-widgets": "dev-master",
-            "yiisoft/yii2": "dev-master",
-            "yiisoft/yii2-bootstrap": "dev-master"
+            "kartik-v/yii2-widgets": "*",
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-bootstrap": "*"
         },
-        "time": "2014-03-30 07:53:42",
+        "time": "2014-04-15 15:35:02",
         "type": "yii2-extension",
         "installation-source": "source",
         "autoload": {
@@ -676,25 +759,74 @@
         ]
     },
     {
+        "name": "kop/yii2-scroll-pager",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kop/yii2-scroll-pager.git",
+            "reference": "6d05bae65682794e779fb79797f93f4a1d76006f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kop/yii2-scroll-pager/zipball/6d05bae65682794e779fb79797f93f4a1d76006f",
+            "reference": "6d05bae65682794e779fb79797f93f4a1d76006f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2014-04-05 11:56:27",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "kop\\y2sp\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ivan Koptiev",
+                "email": "ikoptev@gmail.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Infinite AJAX scrolling for Yii2 ListView widget",
+        "homepage": "http://kop.github.io/yii2-scroll-pager/",
+        "keywords": [
+            "pager",
+            "pagination",
+            "scroll",
+            "scrolling",
+            "yii",
+            "yii2"
+        ]
+    },
+    {
         "name": "yiisoft/yii2-swiftmailer",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-            "reference": "eba2c032a808aa5631fec8be249483032dbf745b"
+            "reference": "693092b44f5e6f3b4804f60b64beb85cff74a9cb"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/eba2c032a808aa5631fec8be249483032dbf745b",
-            "reference": "eba2c032a808aa5631fec8be249483032dbf745b",
+            "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/693092b44f5e6f3b4804f60b64beb85cff74a9cb",
+            "reference": "693092b44f5e6f3b4804f60b64beb85cff74a9cb",
             "shasum": ""
         },
         "require": {
             "swiftmailer/swiftmailer": "*",
             "yiisoft/yii2": "*"
         },
-        "time": "2014-03-20 23:54:52",
+        "time": "2014-04-14 01:22:29",
         "type": "yii2-extension",
         "installation-source": "source",
         "autoload": {
@@ -730,18 +862,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-codeception.git",
-            "reference": "f2202b33072091686cd78ea490ea38cc6da6d465"
+            "reference": "0ea59d1f7356bbb40307be1b6a8a71acae870812"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/f2202b33072091686cd78ea490ea38cc6da6d465",
-            "reference": "f2202b33072091686cd78ea490ea38cc6da6d465",
+            "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/0ea59d1f7356bbb40307be1b6a8a71acae870812",
+            "reference": "0ea59d1f7356bbb40307be1b6a8a71acae870812",
             "shasum": ""
         },
         "require": {
             "yiisoft/yii2": "*"
         },
-        "time": "2014-03-16 04:46:21",
+        "time": "2014-04-14 01:22:29",
         "type": "yii2-extension",
         "installation-source": "source",
         "autoload": {
@@ -772,19 +904,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-debug.git",
-            "reference": "0d7b65e443dfd6e05e9204502438cf8e2837899d"
+            "reference": "69e1d44899a3657d52e046e419e3f109ef22c1fc"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/0d7b65e443dfd6e05e9204502438cf8e2837899d",
-            "reference": "0d7b65e443dfd6e05e9204502438cf8e2837899d",
+            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/69e1d44899a3657d52e046e419e3f109ef22c1fc",
+            "reference": "69e1d44899a3657d52e046e419e3f109ef22c1fc",
             "shasum": ""
         },
         "require": {
             "yiisoft/yii2": "*",
             "yiisoft/yii2-bootstrap": "*"
         },
-        "time": "2014-03-29 01:54:32",
+        "time": "2014-04-15 18:44:11",
         "type": "yii2-extension",
         "installation-source": "source",
         "autoload": {
@@ -818,12 +950,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-gii.git",
-            "reference": "3a6e7d20a15f07fbd2fd5b9fc0b5c15f0ee3c952"
+            "reference": "9a27032b71bb2a505df9f6c3b53b668912859d07"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/3a6e7d20a15f07fbd2fd5b9fc0b5c15f0ee3c952",
-            "reference": "3a6e7d20a15f07fbd2fd5b9fc0b5c15f0ee3c952",
+            "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/9a27032b71bb2a505df9f6c3b53b668912859d07",
+            "reference": "9a27032b71bb2a505df9f6c3b53b668912859d07",
             "shasum": ""
         },
         "require": {
@@ -831,7 +963,7 @@
             "yiisoft/yii2": "*",
             "yiisoft/yii2-bootstrap": "*"
         },
-        "time": "2014-03-30 23:01:02",
+        "time": "2014-04-14 08:19:06",
         "type": "yii2-extension",
         "installation-source": "source",
         "autoload": {
@@ -855,135 +987,6 @@
         "keywords": [
             "code generator",
             "gii",
-            "yii2"
-        ]
-    },
-    {
-        "name": "kop/yii2-scroll-pager",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/kop/yii2-scroll-pager.git",
-            "reference": "9323ef22ed88e72cf7eee0ae72434ea62cf498b1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/kop/yii2-scroll-pager/zipball/9323ef22ed88e72cf7eee0ae72434ea62cf498b1",
-            "reference": "9323ef22ed88e72cf7eee0ae72434ea62cf498b1",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "*"
-        },
-        "time": "2014-01-11 15:48:02",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "kop\\y2sp\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Ivan Koptiev",
-                "email": "ikoptev@gmail.com",
-                "role": "Developer"
-            }
-        ],
-        "description": "Infinite AJAX scrolling for Yii2 ListView widget",
-        "homepage": "http://kop.github.io/yii2-scroll-pager/",
-        "keywords": [
-            "pager",
-            "pagination",
-            "scroll",
-            "scrolling",
-            "yii",
-            "yii2"
-        ]
-    },
-    {
-        "name": "yiisoft/yii2",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "1c0ae4469f1547496e0557154b85add9510cbb94"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/1c0ae4469f1547496e0557154b85add9510cbb94",
-            "reference": "1c0ae4469f1547496e0557154b85add9510cbb94",
-            "shasum": ""
-        },
-        "require": {
-            "cebe/markdown": "0.9.*",
-            "ext-mbstring": "*",
-            "ezyang/htmlpurifier": "4.6.*",
-            "lib-pcre": "*",
-            "php": ">=5.4.0",
-            "yiisoft/jquery": "~2.0 | ~1.10",
-            "yiisoft/jquery-pjax": "*",
-            "yiisoft/yii2-composer": "*"
-        },
-        "time": "2014-03-31 15:34:47",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "yii\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Qiang Xue",
-                "email": "qiang.xue@gmail.com",
-                "homepage": "http://www.yiiframework.com/",
-                "role": "Founder and project lead"
-            },
-            {
-                "name": "Alexander Makarov",
-                "email": "sam@rmcreative.ru",
-                "homepage": "http://rmcreative.ru/",
-                "role": "Core framework development"
-            },
-            {
-                "name": "Maurizio Domba",
-                "homepage": "http://mdomba.info/",
-                "role": "Core framework development"
-            },
-            {
-                "name": "Carsten Brandt",
-                "email": "mail@cebe.cc",
-                "homepage": "http://cebe.cc/",
-                "role": "Core framework development"
-            },
-            {
-                "name": "Timur Ruziev",
-                "email": "resurtm@gmail.com",
-                "homepage": "http://resurtm.com/",
-                "role": "Core framework development"
-            },
-            {
-                "name": "Paul Klimov",
-                "email": "klimov.paul@gmail.com",
-                "role": "Core framework development"
-            }
-        ],
-        "description": "Yii PHP Framework Version 2",
-        "homepage": "http://www.yiiframework.com/",
-        "keywords": [
-            "framework",
             "yii2"
         ]
     }

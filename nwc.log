@@ -1,0 +1,12 @@
+[Thu Apr 17 00:06:41 2014] 139.195.117.229:57360 [302]: /
+[Thu Apr 17 00:06:43 2014] 139.195.117.229:57359 [200]: /index.php?r=site/login
+[Thu Apr 17 00:06:44 2014] 139.195.117.229:57363 [200]: /assets/ecb32217/css/bootstrap.css
+[Thu Apr 17 00:06:44 2014] 139.195.117.229:57361 [200]: /assets/c3462386/css/font-awesome.min.css
+[Thu Apr 17 00:06:44 2014] 139.195.117.229:57362 [200]: /css/site.css
+[Thu Apr 17 00:06:45 2014] 139.195.117.229:57366 [200]: /css/adminlte.css
+[Thu Apr 17 00:06:45 2014] 139.195.117.229:57365 [200]: /assets/8531ca36/jquery.js
+[Thu Apr 17 00:06:45 2014] 139.195.117.229:57364 [200]: /assets/2d8472b0/yii.js
+[Thu Apr 17 00:06:50 2014] 139.195.117.229:57367 [200]: /assets/2d8472b0/yii.validation.js
+[Thu Apr 17 00:06:51 2014] 139.195.117.229:57369 [200]: /assets/2d8472b0/yii.activeForm.js
+[Thu Apr 17 00:06:51 2014] 139.195.117.229:57370 [200]: /assets/ecb32217/js/bootstrap.js
+[Thu Apr 17 00:06:57 2014] 139.195.117.229:57371 [200]: /favicon.ico

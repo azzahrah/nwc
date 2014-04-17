@@ -25,7 +25,7 @@ DIRECTORY STRUCTURE
       web/                contains the entry script and Web resources
 
 
-
+  
 REQUIREMENTS
 ------------
 
